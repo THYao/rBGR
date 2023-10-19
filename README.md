@@ -13,6 +13,6 @@ The function `rBGR_mcmc_Int()` produces the posterior samples of (i) two compone
 
  
 ## Summarizing Posterior Samples
-Once we obtain posterior samples of coefficients and edges, users can symmetrize and summarize the results to obtain undirected graphs in two different levels: population ($\alpha_{j,k,h}$) and individual ($\beta_{j,k}( \mathbf{X_i})$) levels. We offer codes in the package to demonstrate our symmetrizing and summarizing algorithm with the data used in Yao et al. (2023+).
+Once we obtain posterior samples of coefficients and edges, users can symmetrize and summarize the results to obtain undirected graphs in two different levels: population ($\alpha_{j,k,h}$) and individual ( $\beta_{j,k}( \mathbf{X_i})$ ) levels. We offer codes in the package to demonstrate our symmetrizing and summarizing algorithm with the data used in Yao et al. (2023+).
 
 For the population-level graph, users can run `pstSmpExt_pop.R` to extract the population-level information and visualize the results through the `PlotRes_popLevel.R`. Similarly, in the individual-level graph, we first obtain the symmetrized edges by executing `pstSmpExt_ind.R` and then visualize the results by `PlotRes_indQuantile.R`. Currently, we use the 5, 25, 50, 75, and 95-th percentiles of the covariates as five different individuals, as shown in Yao et al. (2023+).
